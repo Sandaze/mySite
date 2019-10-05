@@ -1,0 +1,76 @@
+.header
+    height: 100vh
+    &-inner
+    &-wrapper
+        position: fixed
+        top: 0
+        width: 100%
+    &-navbar
+        display: flex
+        justify-content: space-between
+        align-items: center
+        background-color: rgb(245, 246, 250)
+        padding: 0 15px
+    &-logo
+        color: $text-color
+        display: flex
+        align-items: center
+        &__img
+            width: 60px
+            height: 60px
+        &__text
+            font-size: 20px
+            +bold
+    &-nav
+        display: flex
+        align-items: center
+        &__link:first-child
+            border-left: 0.5px solid rgba(0,0,0,0.3)            
+        &__link
+            position: relative
+            padding: 20px 35px
+            font-size: 17px
+            text-transform: uppercase
+            color: $text-color
+            border-right: 0.5px solid rgba(0,0,0,0.3)
+            transition: color 0.4s
+            &::after
+                content: ''
+                position: absolute
+                height: 2.5px
+                z-index: 8
+                right: 0%
+                width: 100%
+                bottom: 0
+                background: $primary
+                transform: scaleX(0)
+                transition: 0.4s
+            &:hover:after
+                transform: scaleX(1)
+            &:hover
+                color: #0097e6
+    &-button
+        padding: 10px
+        border: $primary solid
+        color: $text-color
+        transition: 0.4s
+        border-radius: 5px
+        &:hover
+            background-color: $primary
+            color: #fff
+    &-content
+        text-align: center
+        padding-top: 200px
+        color: #fff
+        &__title
+            font-size: 32px
+            +bold
+            margin-bottom: 20px
+            letter-spacing: 3px
+        &__subtitle
+            color: #fff
+            max-width: 600px
+            margin: 0 auto
+            font-size: 16px
+            letter-spacing: 2px
+            line-height: 2em
