@@ -300,33 +300,49 @@ h1, h2, h3, h4, h5, h6 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-top: 30px;
-}
-
-.card-layer span {
-  font-size: 50px;
 }
 
 .card-percent {
+  position: relative;
+}
+
+.card-percent-text {
   font-size: 50px;
   position: absolute;
 }
 
+.card-percent-text__symbol {
+  position: absolute;
+  font-size: 20px;
+  right: 0;
+  bottom: 50%;
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%);
+}
+
 .card-svg {
-  width: 110px;
-  height: 110px;
+  position: relative;
+  width: 130px;
+  height: 130px;
 }
 
 .card-svg__circle {
   fill: none;
   stroke-width: 5px;
+  stroke: green;
   width: 50px;
   height: 50px;
+  stroke-dasharray: 376.99111843077515;
+  stroke-dashoffset: 376.99111843077515;
+  -webkit-transform-origin: center center;
+          transform-origin: center center;
+  -webkit-transition: stroke-dashoffset 3s ease;
+  transition: stroke-dashoffset 3s ease;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 
-.card-svg__circle:nth-child(2) {
-  stroke-dasharray: 440;
-  stroke-dashoffset: 360;
-  stroke: green;
+.slick-slide {
+  margin-right: 10px;
 }
 /*# sourceMappingURL=style.css.map */
