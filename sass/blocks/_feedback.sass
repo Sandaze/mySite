@@ -1,0 +1,37 @@
+.feedback
+    &-inner
+        display: flex
+        flex-wrap: wrap
+    &-left
+        background-color: $primary
+        padding: 50px
+        width: 50%
+    &__title
+        margin-bottom: 30px
+    &__subtitle
+        line-height: 25px
+        color: rgba(255,255 ,255 ,0.6)
+    
+    &-right
+        padding: 50px
+        background: rgba(18, 18, 48, 0.6)
+        flex-grow: 1
+    &__form
+        display: flex
+        flex-direction: column
+        align-self: center
+        & input, & textarea
+            background-color: transparent
+            color: #fff
+            border: none
+            border: 1px solid #fff
+            padding: 17px
+            margin-bottom: 15px
+            &:focus
+                border: 1px solid #97b4e1
+        & input::placeholder, textarea::placeholder
+            color: rgba(#fff, 0.5 )
+    &__button
+        margin-top: 10px
+        background-color: transparent
+        color: #fff

@@ -9,9 +9,29 @@
         font-size: 30px
         +bold
     &-slider
+        position: relative
         max-width: 90%
         margin: 50px auto
 .slide
+    &-arrow
+        position: absolute
+        top: 50%
+        display: flex
+        justify-content: center
+        align-items: center
+        padding: 10px
+        color: #fff
+        font-size: 70px
+        transition: 0.3s
+        cursor: pointer
+        &__right
+            right: 0
+            transform: translate(100%, -50%)
+            margin-right: -10px
+        &__left
+            transform: translate(-100%, -50%)
+            left: 0
+            margin-left: -10px
 .card
     &__info
         position: absolute
@@ -66,7 +86,10 @@
         position: relative
         width: 130px
         height: 130px
+        transform-origin: center
+        transform: rotate(-90deg)
         &__circle
+            position: relative
             fill: none
             stroke-width: 5px
             stroke: green
@@ -74,8 +97,7 @@
             height: 50px
             stroke-dasharray: 376.99111843077515
             stroke-dashoffset: 376.99111843077515
-            transform-origin: center center
-            transition: stroke-dashoffset 3s ease
-            transform: rotate(-90deg)
+            transition: stroke-dashoffset 2.5s ease
+            
 .slick-slide
     margin-right: 10px

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+    <!-- textolite.ru -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,196 +16,221 @@
 
 <body>
     <div class="bg-fixed"></div>
-    <header class="header">
-        <div class="header-inner">
-            <div class="header-wrapper">
-                <div class="header-navbar">
-                    <a href="#" class="header-logo">
-                        <img src="images/logo.png" class="header-logo__img" alt="">
-                        <sapn class="header-logo__text">Ilya</sapn>
-                    </a>
-                    <div class="header-nav">
-                        <a href="#" class="header-nav__link">Главная</a>
-                        <a href="#" class="header-nav__link">Умения</a>
-                        <a href="#" class="header-nav__link">Обо мне</a>
-                        <a href="#" class="header-nav__link">Портфолио</a>
+    <a href="#home" class="backToTop" id="backUp"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+    <div class="main">
+        <header class="header" id="home">
+            <div class="header-inner">
+                <div class="header-wrapper">
+                    <div class="header-navbar">
+                        <a href="#" class="header-logo">
+                            <img src="images/logo.png" class="header-logo__img" alt="">
+                            <sapn class="header-logo__text">Ilya</sapn>
+                        </a>
+                        <div class="header-nav">
+                            <a href="#home" class="header-nav__link">Главная</a>
+                            <a href="#skills" class="header-nav__link">Умения</a>
+                            <a href="#" class="header-nav__link" id="aboutMe">Обо мне</a>
+                            <a href="#" class="header-nav__link">Портфолио</a>
+                        </div>
+                        <div class="header-button-contact">
+                            <a href="#feedback" class="header-button">Связь&nbsp;со&nbsp;мной</a>
+                        </div>
                     </div>
-                    <div class="header-button-contact">
-                        <a href="" class="header-button">Связь&nbsp;со&nbsp;мной</a>
+                </div>
+                <div class="header-content">
+                    <h3 class="header-content__title">Привет, я Илья !!</h3>
+                    <!-- /.header-content__title -->
+                    <p class="header-content__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, qui
+                        blanditiis natus dicta quia deserunt.</p>
+                    <!-- /.header-content__subtitle -->
+                </div>
+                <!-- /.header-content header__content -->
+            </div>
+        </header>
+        <section class="section profile">
+            <div class="profile-inner">
+                <div class="profile-info">
+                    <h3 class="profile-info__title">Немного обо мне</h3>
+                    <!-- /.profile-info__title -->
+                    <p class="profile-info__subtitle">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quidem itaque nisi velit sint esse ad eveniet deleniti culpa maiores ipsum magnam ducimus nobis, ipsam saepe et! Ducimus laudantium sint voluptate consequuntur! Eligendi, explicabo quisquam.
+                        <button class="profile-info__button button-o">Больше обо мне</button>
+                    </p>
+                    <!-- /.profile-info__subtitle -->
+                </div>
+                <!-- /.profile-info -->
+            </div>
+        </section>
+        <section class="skills">
+            <div class="skills-inner">
+                <h3 class="skills__title" id="skills">Умения</h3>
+                <div class="skills-slider">
+                    <div class="slide-arrow slide-arrow__right">
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </div>
+                    <!-- /.slide__arrow -->
+                    <div class="slide-arrow slide-arrow__left">
+                            <i class="fa fa-angle-left" aria-hidden="true"></i>
+                    </div>
+                    <!-- /.slide__arrow -->
+                    <div class="slide">
+                        <div class="card-box">
+                            <div class="card__info">
+                                <div class="card-layer">
+                                    <div class="card-percent-text">
+                                        <p class="card-percent">90</p>
+                                        <span class="card-percent-text__symbol">%</span>
+                                    </div>
+                                    <!-- /.card-percent -->
+                                    <svg class="card-svg">
+                                        <circle class="card-svg__circle" cx="65" cy="65" r="60"></circle>
+                                    </svg>
+                                </div>
+                                <!-- /.card-layer -->
+                                <div class="card-desc">
+                                    <img src="images/html5.png" alt="" class="card__img">
+                                    <h2 class="card__title">HTML5</h2>
+                                </div>
+                                <!-- /.card__title -->
+                            </div>
+                            <!-- /.card__info -->
+                        </div>
+                        <!-- /.card-box -->
+                        <div class="card-box">
+                            <div class="card__info">
+                                <div class="card-layer">
+                                    <div class="card-percent-text">
+                                        <p class="card-percent">85</p>
+                                        <span class="card-percent-text__symbol">%</span>
+                                    </div>
+                                    <!-- /.card-percent -->
+                                    <svg class="card-svg">
+                                        <circle class="card-svg__circle" cx="65" cy="65" r="60"></circle>
+                                    </svg>
+                                </div>
+                                <!-- /.card-layer -->
+                                <div class="card-desc">
+                                    <img src="images/css.png" alt="" class="card__img">
+                                    <h2 class="card__title">CSS3</h2>
+                                </div>
+                                <!-- /.card__title -->
+                            </div>
+                            <!-- /.card__info -->
+                        </div>
+                        <!-- /.card-box -->
+                        <div class="card-box">
+                            <div class="card__info">
+                                <div class="card-layer">
+                                    <div class="card-percent-text">
+                                        <p class="card-percent">60</p>
+                                        <span class="card-percent-text__symbol">%</span>
+                                    </div>
+                                    <!-- /.card-percent -->
+                                    <svg class="card-svg">
+                                        <circle class="card-svg__circle" cx="65" cy="65" r="60"></circle>
+                                    </svg>
+                                </div>
+                                <!-- /.card-layer -->
+                                <div class="card-desc">
+                                    <img src="images/js.png" alt="" class="card__img">
+                                    <h2 class="card__title">JS</h2>
+                                </div>
+                                <!-- /.card__title -->
+                            </div>
+                            <!-- /.card__info -->
+                        </div>
+                        <!-- /.card-box -->
+                        <div class="card-box">
+                            <div class="card__info">
+                                <div class="card-layer">
+                                    <div class="card-percent-text">
+                                        <p class="card-percent">75</p>
+                                        <span class="card-percent-text__symbol">%</span>
+                                    </div>
+                                    <!-- /.card-percent -->
+                                    <svg class="card-svg">
+                                        <circle class="card-svg__circle" cx="65" cy="65" r="60"></circle>
+                                    </svg>
+                                </div>
+                                <!-- /.card-layer -->
+                                <div class="card-desc">
+                                    <img src="images/php.png" alt="" class="card__img">
+                                    <h2 class="card__title">PHP7</h2>
+                                </div>
+                                <!-- /.card__title -->
+                            </div>
+                            <!-- /.card__info -->
+                        </div>
+                        <!-- /.card-box -->
+                        <div class="card-box">
+                            <div class="card__info">
+                                <div class="card-layer">
+                                    <div class="card-percent-text">
+                                        <p class="card-percent">55</p>
+                                        <span class="card-percent-text__symbol">%</span>
+                                    </div>
+                                    <!-- /.card-percent -->
+                                    <svg class="card-svg">
+                                        <circle class="card-svg__circle" cx="65" cy="65" r="60"></circle>
+                                    </svg>
+                                </div>
+                                <!-- /.card-layer -->
+                                <div class="card-desc">
+                                    <img src="images/wordpress.png" alt="" class="card__img">
+                                    <h2 class="card__title">WordPress</h2>
+                                </div>
+                                <!-- /.card__title -->
+                            </div>
+                            <!-- /.card__info -->
+                        </div>
+                        <!-- /.card-box -->
                     </div>
                 </div>
             </div>
-            <div class="header-content">
-                <h3 class="header-content__title">Привет, я Илья !!</h3>
-                <!-- /.header-content__title -->
-                <p class="header-content__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, qui
-                    blanditiis natus dicta quia deserunt.</p>
-                <!-- /.header-content__subtitle -->
-            </div>
-            <!-- /.header-content header__content -->
-        </div>
-    </header>
-    <section class="section profile">
-        <div class="profile-inner">
-            <div class="profile-info">
-                <h3 class="profile-info__title">Немного обо мне</h3>
-                <!-- /.profile-info__title -->
-                <p class="profile-info__subtitle">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis
-                    maiores saepe fuga numquam omnis perferendis amet sapiente, tempora sunt unde qui eos facere minus
-                    quo ex iusto temporibus.<br><br> Molestias consequatur consectetur voluptatum at minus hic
-                    consequuntur recusandae sit quos eligendi ipsum excepturi, sequi enim deserunt vel nostrum maxime.
-                    Temporibus, accusantium.
-                    <button class="profile-info__button button-o">Больше обо мне</button></p>
-                <!-- /.profile-info__subtitle -->
-            </div>
-            <!-- /.profile-info -->
-        </div>
+        </section>
+        <!-- Here should be portfolio -->
+    <section class="portfolio">
+        <p class="title">Портфолио here</p>
     </section>
-    <section class="skills">
-        <div class="skills-inner">
-            <h3 class="skills__title">Умения</h3>
-            <div class="skills-slider">
-                <div class="slide">
-                    <div class="card-box">
-                        <div class="card__info">
-                            <div class="card-layer">
-                                <div class="card-percent-text">
-                                    <p class="card-percent">90</p>
-                                    <span class="card-percent-text__symbol">%</span>
-                                </div>
-                                <!-- /.card-percent -->
-                                <svg class="card-svg">
-                                    <circle class="card-svg__circle" cx="65" cy="65" r="60"></circle>
-                                </svg>
-                            </div>
-                            <!-- /.card-layer -->
-                            <div class="card-desc">
-                                <img src="images/html5.png" alt="" class="card__img">
-                                <h2 class="card__title">HTML5</h2>
-                            </div>
-                            <!-- /.card__title -->
+    
+        <!-- /.Here should be portfolio -->
+        <section class="feedback" id="feedback">
+            <div class="feedback-inner">
+                <div class="feedback-left">
+                    <h1 class="feedback__title title">Обратная связь</h1>
+                    <p class="feedback__subtitle">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique, sed quis ex iure animi placeat magnam obcaecati non perferendis velit sapiente. <br><br> Ipsam ut iste, natus quas, iure voluptates error reprehenderit dolore aut et, aperiam beatae.<br><br>Thank you!</p>
+                </div>
+                <div class="feedback-right">
+                    <form action="">
+                        <div class="feedback__form">
+                            <input type="text" placeholder="ФИО">
+                            <input type="text" placeholder="Email">
+                            <textarea name="" id="" cols="30" rows="10"  placeholder="Сообщение"></textarea>
+                            <button class="feedback__button button-o" id="feedbackButton">Отправить&nbsp;сообщение</button>
                         </div>
-                        <!-- /.card__info -->
-                    </div>
-                    <!-- /.card-box -->
-                    <div class="card-box">
-                        <div class="card__info">
-                            <div class="card-layer">
-                                <div class="card-percent-text">
-                                    <p class="card-percent">85</p>
-                                    <span class="card-percent-text__symbol">%</span>
-                                </div>
-                                <!-- /.card-percent -->
-                                <svg class="card-svg">
-                                    <circle class="card-svg__circle" cx="65" cy="65" r="60"></circle>
-                                </svg>
-                            </div>
-                            <!-- /.card-layer -->
-                            <div class="card-desc">
-                                <img src="images/css.png" alt="" class="card__img">
-                                <h2 class="card__title">CSS3</h2>
-                            </div>
-                            <!-- /.card__title -->
-                        </div>
-                        <!-- /.card__info -->
-                    </div>
-                    <!-- /.card-box -->
-                    <div class="card-box">
-                        <div class="card__info">
-                            <div class="card-layer">
-                                <div class="card-percent-text">
-                                    <p class="card-percent">60</p>
-                                    <span class="card-percent-text__symbol">%</span>
-                                </div>
-                                <!-- /.card-percent -->
-                                <svg class="card-svg">
-                                    <circle class="card-svg__circle" cx="65" cy="65" r="60"></circle>
-                                </svg>
-                            </div>
-                            <!-- /.card-layer -->
-                            <div class="card-desc">
-                                <img src="images/js.png" alt="" class="card__img">
-                                <h2 class="card__title">JS</h2>
-                            </div>
-                            <!-- /.card__title -->
-                        </div>
-                        <!-- /.card__info -->
-                    </div>
-                    <!-- /.card-box -->
-                    <div class="card-box">
-                        <div class="card__info">
-                            <div class="card-layer">
-                                <div class="card-percent-text">
-                                    <p class="card-percent">75</p>
-                                    <span class="card-percent-text__symbol">%</span>
-                                </div>
-                                <!-- /.card-percent -->
-                                <svg class="card-svg">
-                                    <circle class="card-svg__circle" cx="65" cy="65" r="60"></circle>
-                                </svg>
-                            </div>
-                            <!-- /.card-layer -->
-                            <div class="card-desc">
-                                <img src="images/php.png" alt="" class="card__img">
-                                <h2 class="card__title">PHP7</h2>
-                            </div>
-                            <!-- /.card__title -->
-                        </div>
-                        <!-- /.card__info -->
-                    </div>
-                    <!-- /.card-box -->
-                    <div class="card-box">
-                        <div class="card__info">
-                            <div class="card-layer">
-                                <div class="card-percent-text">
-                                    <p class="card-percent">55</p>
-                                    <span class="card-percent-text__symbol">%</span>
-                                </div>
-                                <!-- /.card-percent -->
-                                <svg class="card-svg">
-                                    <circle class="card-svg__circle" cx="65" cy="65" r="60"></circle>
-                                </svg>
-                            </div>
-                            <!-- /.card-layer -->
-                            <div class="card-desc">
-                                <img src="images/wordpress.png" alt="" class="card__img">
-                                <h2 class="card__title">WordPress</h2>
-                            </div>
-                            <!-- /.card__title -->
-                        </div>
-                        <!-- /.card__info -->
-                    </div>
-                    <!-- /.card-box -->
-                    <div class="card-box">
-                        <div class="card__info">
-                            <div class="card-layer">
-                                <div class="card-percent-text">
-                                    <p class="card-percent">0</p>
-                                    <span class="card-percent-text__symbol">%</span>
-                                </div>
-                                <!-- /.card-percent -->
-                                <svg class="card-svg">
-                                    <circle class="card-svg__circle" cx="65" cy="65" r="60"></circle>
-                                </svg>
-                            </div>
-                            <!-- /.card-layer -->
-                            <div class="card-desc">
-                                <img src="" alt="" class="card__img">
-                                <h2 class="card__title">OpenCart</h2>
-                            </div>
-                            <!-- /.card__title -->
-                        </div>
-                        <!-- /.card__info -->
-                    </div>
-                    <!-- /.card-box -->
+                    </form>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <!-- <section class="about-me">
+            <div class="about-me-left">
+                <img src="images/me.png" alt="">
+            </div>
+            <div class="abot-me-right"></div>
+        </section> -->
+        <footer class="footer">
+            <div class="footer-inner">
+                
+            </div>
+        </footer>
+    </div>
+
+
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="slick/slick.js"></script>
     <script src="js/jquery.spincrement.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/ajax/feedback.js"></script>
 </body>
 
 </html>
