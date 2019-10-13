@@ -29,7 +29,7 @@
                         <div class="header-nav">
                             <a href="#home" class="header-nav__link">Главная</a>
                             <a href="#skills" class="header-nav__link">Умения</a>
-                            <a href="#" class="header-nav__link" id="aboutMe">Обо мне</a>
+                            <a class="header-nav__link aboutMe">Обо мне</a>
                             <a href="#" class="header-nav__link">Портфолио</a>
                         </div>
                         <div class="header-button-contact">
@@ -38,7 +38,7 @@
                     </div>
                 </div>
                 <div class="header-content">
-                    <h3 class="header-content__title">Привет, я Илья !!</h3>
+                    <h3 class="header-content__title">Привет, я&nbsp;Илья&nbsp;!!</h3>
                     <!-- /.header-content__title -->
                     <p class="header-content__subtitle">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod, qui
                         blanditiis natus dicta quia deserunt.</p>
@@ -54,7 +54,7 @@
                     <!-- /.profile-info__title -->
                     <p class="profile-info__subtitle">
                         Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, quidem itaque nisi velit sint esse ad eveniet deleniti culpa maiores ipsum magnam ducimus nobis, ipsam saepe et! Ducimus laudantium sint voluptate consequuntur! Eligendi, explicabo quisquam.
-                        <button class="profile-info__button button-o">Больше обо мне</button>
+                        <button class="profile-info__button button-o aboutMe">Больше обо мне</button>
                     </p>
                     <!-- /.profile-info__subtitle -->
                 </div>
@@ -212,15 +212,26 @@
                 </div>
             </div>
         </section>
-        <!-- <section class="about-me">
-            <div class="about-me-left">
-                <img src="images/me.png" alt="">
+        <section class="about-me">
+
+            <div class="about-me-left" id="layerLeft"></div>
+
+            <div class="about-me-info" id="aboutInfo">
+                    <img src="images/me.png" alt="" class="about-me-info__img">
+                    <div class="about-me-info__desc">
+                        <h3 class="about-me-info__title title">Откуда я</h3>
+                        <p class="about-me-info__subtitle">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolor error expedita deleniti quidem cumque maxime voluptatibus veritatis omnis eaque et minima perferendis at incidunt tempora itaque libero laborum vitae, dicta excepturi odit aliquid sed repellendus pariatur.<br><br> Labore aliquid animi ducimus quam amet veritatis corrupti aliquam adipisci, dignissimos, similique blanditiis laudantium omnis voluptate dolorum tempore praesentium, suscipit sit facere ipsam! Numquam exercitationem quod, saepe porro earum voluptatem maiores similique soluta molestiae.maxime voluptatibus veritatis omnis eaque et minima perferendis at incidunt tempora itaque libero laborum vitae, dicta excepturi odit aliquid sed repellendus pariatur. Labore aliquid animi ducimus quam amet veritatis corrupti aliquam adipisci, dignissimos, similique blanditiis laudantium omnis voluptate dolorum tempore praesentium, suscipit sit facere ipsam! Numquam exercitationem quod, saepe porro earum voluptatem maiores similique solutamet consectetur, <br><br> adipisicing elit. Dolor error expedita deleniti quidem cumque maxime voluptatibus veritatis omnis eaque et minima perferendis at incidunt tempora itaque libero laborum vitae, dicta excepturi odit aliquid sed repellendus pariatur. Labore aliquid animi ducimus quam amet veritatis corrupti aliquam adipisci, dignissimos, similique blanditiis laudantium omnis voluptate dolorum tempore praesentium, suscipit sit facere ipsam! Numquam exercitationem quod, saepe porro earum voluptatem maiores similique soluta molestiae.maxime voluptatibus veritatis omnis eaque et minima perferendis at incidunt tempora itaque libero laborum vitae, dicta excepturi odit aliquid sed repellendus pariatur. Labore aliquid animi ducimus quam amet veritatis corrupti aliquam adipisci, dignissimos, similique blanditiis laudantium omnis voluptate dolorum tempore praesentium, suscipit sit facere ipsam! Numquam exercitationem quod, saepe porro earum voluptatem maiores similique solut</p>
+                </div>
+                <div class="about-me__button aboutMe">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                </div>
             </div>
-            <div class="abot-me-right"></div>
-        </section> -->
+
+            <div class="about-me-right" id="layerRight"></div>
+
+        </section>
         <footer class="footer">
             <div class="footer-inner">
-                
             </div>
         </footer>
     </div>

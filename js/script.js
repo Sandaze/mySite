@@ -14,11 +14,36 @@ $(document).ready(function () {
         $('.slide').slick({
             slidesToShow: 3.5,
             slidesToScroll: 1,
-            // autoplay: true,
+            autoplay: true,
             autoplaySpeed: 2000,
             centerMode: true,
             nextArrow: ' <div class="slide-arrow slide-arrow__right"><i class="fa fa-angle-right" aria-hidden="true"></i></div>',
             prevArrow: '<div class="slide-arrow slide-arrow__left"><i class="fa fa-angle-left" aria-hidden="true"></i></div>',
+            responsive: [
+            {
+                breakpoint: 990,
+                settings: {
+                    slidesToShow: 2,
+                    centerMode: true,
+                    mobileFirst: true,
+                    arrows: false,
+                }
+            },
+            {
+                breakpoint: 700,
+                settings: {
+                    slidesToShow: 1.5,
+                    centerMode: true,
+                }
+            },
+            {
+                breakpoint: 450,
+                settings: {
+                    slidesToShow: 1,
+                    centerMode: false,
+                }
+            }
+            ]
         });
     }
     // Cards with percent and button backToTop
@@ -53,9 +78,11 @@ $(document).ready(function () {
                 duration: 3000,
             });
             const layer = document.querySelectorAll('.card-layer');
+            
             layer.forEach(layer => {
                 const percent = layer.querySelector('.card-percent').textContent;
                 const circle = layer.querySelector('.card-svg__circle');
+                
                 const radius = 60;
                 const circumference = 2 * Math.PI * radius;
                 const offset = circumference - percent / 100 * circumference;
@@ -68,9 +95,19 @@ $(document).ready(function () {
     }
     // About Me
     {
-        $('.header-button').click(function (e) { 
-            e.preventDefault();
+        function aboutMe1() {
+            $('#layerLeft').toggleClass('active');
+            $('#layerRight').toggleClass('active');
+            $('#aboutInfo').toggleClass('active');
+        }
+        $('#layerRight').on('transitionend webkitTransitionEnd oTransitionEnd', function (e) {
+            $('.about-me-info__img').toggleClass('active');
+            $('.about-me-info__desc').toggleClass('active');
         });
-           
+        $('.aboutMe').click(function (e) { 
+            e.preventDefault();
+            $('body').toggleClass('modal-open')
+            aboutMe1();
+        });
     }
 });
