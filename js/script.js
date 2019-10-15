@@ -1,4 +1,16 @@
 $(document).ready(function () {
+    //Mobile menu
+    {
+        function openMenu(){
+            $('.headerMob-burger').toggleClass('active');
+            $('.headerMob-nav').toggleClass('active');
+        }
+        $('#burger').click(openMenu);
+        $('.headerMob-nav__link').each(function () { 
+             $(this).click(openMenu);
+        });
+        
+    }
     //Anchor
     {
         $('a[href^="#"]').on("click", function (e) {
@@ -26,7 +38,6 @@ $(document).ready(function () {
                     slidesToShow: 2,
                     centerMode: true,
                     mobileFirst: true,
-                    arrows: false,
                 }
             },
             {

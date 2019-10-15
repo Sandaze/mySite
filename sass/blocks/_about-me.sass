@@ -18,6 +18,7 @@
         overflow: auto
         z-index: 8
         &__desc
+            padding: 10px
             max-width: 700px
             margin: 20px auto
             opacity: 0
@@ -44,12 +45,13 @@
     &-left
         top: 0
         transform: translateX(-100%)
+        opacity: 0
     &-right
         bottom: 0
         transform: translateX(100%)
     &__button
         position: absolute
-        right: 20%
+        right: 5%
         display: flex
         justify-content: center
         align-items: center
@@ -68,5 +70,9 @@
         display: flex
     &-left.active
         transform: translateX(0)
+        opacity: 1
     &-right.active
         transform: translateX(0)
+@media screen and (max-width: 924px)
+    .about-me
+        &__button
