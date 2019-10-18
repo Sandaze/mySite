@@ -1,0 +1,40 @@
+.contacts
+    &__inner
+        display: flex
+        justify-content: center
+        flex-direction: column
+        padding: 20px 0
+        background-color: #fff
+        text-align: center
+    &-title
+        font-size: 26px
+    &-subtitle
+        color: rgba(0,0 ,0 ,0.6)
+        margin-bottom: 10px
+    &-box
+        display: flex
+        flex-direction: row
+        justify-content: center
+    &__item
+        display: flex
+        justify-content: center
+        align-items: center
+        flex-direction: row
+        border: 2px solid $primary
+        margin: 20px
+        width: 70px
+        height: 70px
+        border-radius: 50%
+        font-size: 30px
+        color: #000
+        transition: 0.3s linear
+    &__item:nth-child(1)
+        &:hover
+            border: #597da3
+            background-color: #597da3
+            color: #fff
+    &__item:nth-child(2)
+        &:hover
+            border: #000
+            background-color: #000
+            color: #fff
