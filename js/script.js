@@ -1,15 +1,15 @@
 $(document).ready(function () {
     //Mobile menu
     {
-        function openMenu(){
+        function openMenu() {
             $('.headerMob-burger').toggleClass('active');
             $('.headerMob-nav').toggleClass('active');
         }
         $('#burger').click(openMenu);
-        $('.headerMob-nav__link').each(function () { 
-             $(this).click(openMenu);
+        $('.headerMob-nav__link').each(function () {
+            $(this).click(openMenu);
         });
-        
+
     }
     //Anchor
     {
@@ -31,29 +31,28 @@ $(document).ready(function () {
             centerMode: true,
             nextArrow: ' <div class="slide-arrow slide-arrow__right"><i class="fa fa-angle-right" aria-hidden="true"></i></div>',
             prevArrow: '<div class="slide-arrow slide-arrow__left"><i class="fa fa-angle-left" aria-hidden="true"></i></div>',
-            responsive: [
-            {
-                breakpoint: 990,
-                settings: {
-                    slidesToShow: 2,
-                    centerMode: true,
-                    mobileFirst: true,
+            responsive: [{
+                    breakpoint: 990,
+                    settings: {
+                        slidesToShow: 2,
+                        centerMode: true,
+                        mobileFirst: true,
+                    }
+                },
+                {
+                    breakpoint: 700,
+                    settings: {
+                        slidesToShow: 1.5,
+                        centerMode: true,
+                    }
+                },
+                {
+                    breakpoint: 450,
+                    settings: {
+                        slidesToShow: 1,
+                        centerMode: false,
+                    }
                 }
-            },
-            {
-                breakpoint: 700,
-                settings: {
-                    slidesToShow: 1.5,
-                    centerMode: true,
-                }
-            },
-            {
-                breakpoint: 450,
-                settings: {
-                    slidesToShow: 1,
-                    centerMode: false,
-                }
-            }
             ]
         });
     }
@@ -89,11 +88,11 @@ $(document).ready(function () {
                 duration: 3000,
             });
             const layer = document.querySelectorAll('.card-layer');
-            
+
             layer.forEach(layer => {
                 const percent = layer.querySelector('.card-percent').textContent;
                 const circle = layer.querySelector('.card-svg__circle');
-                
+
                 const radius = 60;
                 const circumference = 2 * Math.PI * radius;
                 const offset = circumference - percent / 100 * circumference;
@@ -115,7 +114,7 @@ $(document).ready(function () {
             $('.about-me-info__img').toggleClass('active');
             $('.about-me-info__desc').toggleClass('active');
         });
-        $('.aboutMe').click(function (e) { 
+        $('.aboutMe').click(function (e) {
             e.preventDefault();
             $('body').toggleClass('modal-open')
             aboutMe1();

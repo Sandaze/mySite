@@ -368,6 +368,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 10px;
   max-width: 900px;
   line-height: 35px;
+  z-index: 1;
 }
 
 .profile-info__button {
@@ -863,5 +864,21 @@ h1, h2, h3, h4, h5, h6 {
   border: #000;
   background-color: #000;
   color: #fff;
+}
+
+.footer__inner {
+  background-color: #3498db;
+  padding: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.footer__desc {
+  pointer-events: none;
 }
 /*# sourceMappingURL=style.css.map */
